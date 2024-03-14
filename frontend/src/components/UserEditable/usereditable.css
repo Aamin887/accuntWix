@@ -1,0 +1,43 @@
+.user-editable {
+  max-width: 100%;
+}
+
+.user-editable .page .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.4em;
+}
+
+.user-editable .page .card-container .data-field {
+  padding: 0.5em 1em;
+  box-shadow: 0 0 3px rgba(48, 49, 49, 0.502);
+
+  background-color: rgba(177, 175, 175, 0.496);
+  display: block;
+}
+
+.user-editable .page .card-container .data-field small {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.user-editable .page .card-container .data-field input,
+.user-editable .page .card-container .data-field select {
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.5em 0.6em;
+  background-color: rgba(128, 128, 128, 0.283);
+  border: none;
+  margin-top: 0.5em;
+  border-radius: 5px;
+}
+
+.user-editable .page .card-container .data-field h4 {
+  margin-top: 0.3em;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.user-editable .buttons {
+  padding-top: 01em;
+}

@@ -1,0 +1,38 @@
+.home {
+  background: url("../../assets/bg-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .content {
+  background-color: rgba(11, 11, 11, 0.703);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home .content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home .content .links {
+  padding: 1em;
+}
+
+.home .content .links a {
+  padding: 0.5em 1em;
+  background-color: var(--brown);
+  margin-left: 0.5em;
+  font-size: 1.5rem;
+  border-radius: 0.2em;
+}
+
+.home .content .links a:hover {
+  opacity: 0.8;
+}

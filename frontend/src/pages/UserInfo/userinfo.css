@@ -1,0 +1,134 @@
+.user-info {
+    width: 100%;
+}
+
+.user-card-info {
+    border-radius: 10px;
+    border: none;
+    min-height: 70px;
+    background-color: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    color: black;
+    margin: 2em auto;
+    width: 90%;
+}
+
+.user-card-info .container {
+    padding: 2em 3em;
+    display: block;
+}
+
+.user-card-info .container .header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.user-card-info .container .header h2 {
+    text-transform: capitalize;
+    color: black;
+}
+
+.user-card-info .container .details {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.user-card-info .container .details .detail {
+    border-radius: 10px;
+    display: flex;
+    padding: 1em 2em;
+    font-size: 1em;
+    background-color: rgb(242, 237, 237);
+}
+
+.user-card-info .container .details .detail.active {
+    background-color: green;
+}
+
+.user-card-info .container .details .detail.active * {
+    color: whitesmoke;
+}
+
+.user-card-info .container .details .detail h4 {
+    margin-right: 10px;
+    color: black;
+    font-weight: bolder;
+}
+
+.user-card-info .container .details .detail p {
+    font-weight: lighter;
+    color: black;
+}
+
+.user-card-overlay {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    place-items: center;
+}
+
+.user-card-overlay.show {
+    display: grid;
+}
+
+.user-card-overlay.show .header h1 {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(
+        circle,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(252, 70, 107, 1) 100%
+    );
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.user-card-overlay::after {
+    position: absolute;
+    filter: blur(30px);
+    background-color: rgba(68, 72, 67, 0.893);
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.user-card-overlay .container {
+    z-index: 10;
+    width: 80%;
+    height: 50%;
+    padding: 3em 2em;
+    background-color: var(--white);
+}
+
+.user-card-overlay .container .header {
+    text-align: center;
+}
+
+.user-card-overlay .container .header h1 {
+    color: black;
+}
+
+.user-card-overlay .container .footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.user-card-overlay .container .footer .btn {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.965rem;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.308);
+}

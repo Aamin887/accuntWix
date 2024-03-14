@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    gap: 2em;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+nav.admin-nav {
+    max-width: 300px;
+    width: 35%;
+    height: 100vh;
+    background-color: var(--brown);
+}
+
+nav.admin-nav .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2em;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+nav.admin-nav .content .logo {
+    width: 150px;
+    margin-bottom: 3em;
+}
+
+/* ======================= Main ======================== */
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+}
+
+.main.active {
+    width: calc(100% - 80px);
+    left: 80px;
+}
