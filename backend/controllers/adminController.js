@@ -53,11 +53,9 @@ const registerAdmin = asyncHandler(async function (req, res) {
     throw new Error("passwords do not match");
   }
 
-  const hash = await hashPassword(password1);
-
   const newAdmin = await Admin.create({
     userName,
-    password: hash,
+    password: password1,
   });
 
   res.status(204).json({
@@ -133,7 +131,7 @@ const noticeUser = asyncHandler(async function (req, res) {
   );
 
   res.json({
-    msg: msg, 
+    msg: msg,
   });
 });
 
