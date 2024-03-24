@@ -29,10 +29,6 @@ function UserDash() {
       toast.error(message);
     }
 
-    // if (user || isSuccess) {
-    //   dispatch(userGetUser(user?._id));
-    // }
-
     if (!user) {
       navigate("/login");
       return;
